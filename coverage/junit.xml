@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="0" errors="0" time="0.787">
+  <testsuite name="Basic Project Validation" errors="0" failures="0" skipped="0" timestamp="2025-08-25T04:55:12" time="0.522" tests="4">
+    <testcase classname="Basic Project Validation should have Node.js environment available" name="Basic Project Validation should have Node.js environment available" time="0.003">
+    </testcase>
+    <testcase classname="Basic Project Validation should support basic JavaScript operations" name="Basic Project Validation should support basic JavaScript operations" time="0.001">
+    </testcase>
+    <testcase classname="Basic Project Validation should support async operations" name="Basic Project Validation should support async operations" time="0.081">
+    </testcase>
+    <testcase classname="Basic Project Validation should have access to Jest matchers" name="Basic Project Validation should have access to Jest matchers" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>

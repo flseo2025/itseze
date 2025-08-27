@@ -1,0 +1,19 @@
+# Global ownership
+* @wmsgeorge
+
+# GitHub Actions workflows require admin approval
+.github/workflows/ @wmsgeorge
+.github/CODEOWNERS @wmsgeorge
+
+# CI/CD configuration
+.lighthouserc.json @wmsgeorge
+.github/renovate.json @wmsgeorge
+
+# Security-sensitive files
+package*.json @wmsgeorge
+.nvmrc @wmsgeorge
+Dockerfile* @wmsgeorge
+
+# Documentation
+*.md @wmsgeorge
+docs/ @wmsgeorge

@@ -1,0 +1,11 @@
+{
+  "src/**/*.{js,ts}": [
+    "eslint --fix --no-error-on-unmatched-pattern"
+  ],
+  "tests/**/*.{js,ts}": [
+    "eslint --fix --no-error-on-unmatched-pattern"
+  ],
+  "*.{json,md}": [
+    "prettier --write"
+  ]
+}

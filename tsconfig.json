@@ -1,0 +1,100 @@
+{
+  "compilerOptions": {
+    // Basic Options
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "lib": ["ES2022", "DOM"],
+    "outDir": "./dist",
+    "rootDir": ".",
+    "removeComments": true,
+    "importHelpers": true,
+    
+    // Strict Type-Checking Options
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    
+    // Additional Checks
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": false,
+    
+    // Module Resolution Options
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@tests/*": ["tests/*"],
+      "@fixtures/*": ["tests/fixtures/*"]
+    },
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    
+    // Source Map Options
+    "sourceMap": true,
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    "sourceRoot": "",
+    
+    // Experimental Options
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    
+    // Advanced Options
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "tsBuildInfoFile": "./dist/.tsbuildinfo"
+  },
+  "include": [
+    "src/index.ts",
+    "src/app.ts",
+    "src/cli/**/*.ts",
+    "src/config/**/*.ts",
+    "src/services/**/*.ts",
+    "src/utils/*.ts",
+    "src/types/**/*.ts",
+    "global.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "coverage",
+    "**/*.js.map",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "src/**/*.tsx",
+    "src/App.tsx",
+    "src/main.tsx",
+    "src/vite-env.d.ts",
+    "src/components/**/*",
+    "src/pages/**/*",
+    "src/hooks/**/*", 
+    "src/contexts/**/*",
+    "src/utils/phoneUtils.ts",
+    "src/utils/countryCodes.ts",
+    "src/utils/designTokens.ts",
+    "src/middleware/**/*",
+    "src/routes/**/*",
+    "vite.config.ts",
+    "tailwind.config.ts"
+  ],
+  "ts-node": {
+    "esm": true,
+    "compilerOptions": {
+      "module": "ESNext"
+    }
+  }
+}

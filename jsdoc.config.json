@@ -1,0 +1,39 @@
+{
+  "source": {
+    "include": ["./src", "./README.md"],
+    "includePattern": "\\.(js|jsx|ts|tsx)$",
+    "exclude": ["node_modules/", "dist/", "build/"],
+    "excludePattern": "\\.test\\.(js|jsx|ts|tsx)$"
+  },
+  "opts": {
+    "destination": "./docs/api/",
+    "recurse": true,
+    "readme": "./README.md"
+  },
+  "plugins": [
+    "plugins/markdown",
+    "jsdoc/lib/jsdoc/tag/dictionary/definitions",
+    "plugins/summarize"
+  ],
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "default": {
+      "outputSourceFiles": true,
+      "includeDate": true
+    }
+  },
+  "markdown": {
+    "hardwrap": true,
+    "idInHeadings": true
+  },
+  "metadata": {
+    "title": "itseze API Documentation",
+    "description": "Comprehensive API documentation for the itseze project",
+    "version": "1.0.0"
+  }
+}
